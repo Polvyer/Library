@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyLibrary</title>
+        <link href="./css/styles.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <h1 class="logo">My<span class="logo-part">Library</span></h1>
+
+        <fieldset>
+            <legend class="legend">Add Book</legend>
+            <form>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" min="0" required>
+
+                <input type="checkbox" id="readBook" name="readBook" value=true>
+                <label for="readBook">Read?</label>
+
+                <input type="submit" value="Add" id="submit">
+                <button id="clear">Clear</button>
+            </form>
+
+        </fieldset>
+
+        <table class="table">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read?</th>
+                <th>Remove</th>
+            </tr>
+        </table>
+
+        <script src="index.js"></script>
+    </body>
+</html>
